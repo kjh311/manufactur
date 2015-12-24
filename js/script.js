@@ -6,6 +6,10 @@ $( document ).ready(function() {
           }, 400, function() {});
     $( "#benAppearingText" ).fadeTo( 1000 , 1, function() {});
     $( "#benText" ).addClass( "textOver" );
+    $( "#keynote").addClass( "marginTop");
+    $( "#hillary").addClass( "marginTop");
+    $( "#mic").addClass( "marginTop");
+    $( "#tony").addClass( "marginTop");
   });
   $( "#ben" ).mouseout(function() {
     $( "#benText" ).animate({
@@ -13,6 +17,10 @@ $( document ).ready(function() {
           }, 400, function() {});
     $( "#benAppearingText" ).fadeTo( "fast" , 0, function() {});
     $( "#benText" ).removeClass( "textOver" );
+    $( "#keynote").removeClass( "marginTop");
+    $( "#hillary").removeClass( "marginTop");
+    $( "#mic").removeClass( "marginTop");
+    $( "#tony").removeClass( "marginTop");
   });
 
   $( "#chuck" ).mouseover(function() {
@@ -21,6 +29,7 @@ $( document ).ready(function() {
           }, 400, function() {});
     $( "#chuckAppearingText" ).fadeTo( 1000 , 1, function() {});
     $( "#chuckText" ).addClass( "textOver" );
+    $( "#davina").addClass( "chuckMargin");
   });
   $( "#chuck" ).mouseout(function() {
     $( "#chuckText" ).animate({
@@ -28,6 +37,7 @@ $( document ).ready(function() {
           }, 400, function() {});
     $( "#chuckAppearingText" ).fadeTo( "fast" , 0, function() {});
     $( "#chuckText" ).removeClass( "textOver" );
+    $( "#davina").removeClass( "chuckMargin");
   });
 
   $( "#davina" ).mouseover(function() {

@@ -1,28 +1,49 @@
 .appearingText{
-  position: absolute;
+  position: relative;
   margin-top: -50px;
+  opacity: 0;
+  z-index: -5;
 }
 .jumbotron{
   background-color: white;
 }
 #ben{
   /*width: 100%;*/
+  z-index: 9;
+  background-color: black;
+}
+#benBlack{
+  position: absolute;
+}
+#benText{
+  position: inherit;
+  margin-top: -190px;
+  margin-left: 25px;
+  /*z-index: 9;*/
+  padding-top: 50px;
+  width: 70%;
+}
+#benAppearingText{
+  margin-top: 40px;
+  margin-left: 20px;
+  /*z-index: -7;*/
 }
 .black{
    -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
-  z-index: -1;
+  z-index: 1;
+  background-color: black;
 }
 .black:hover{
-  background-color: black;
-  -ms-transform: scale(1.3,1.3); /* IE 9 */
-  -webkit-transform: scale(1.3,1.3); /* Safari */
+-ms-transform: scale(1.3,1.3);
+  -webkit-transform: scale(1.3,1.3);
   transform: scale(1.3,1.3);
-  z-index: 7;
+  /*z-index: 3;*/
   position: relative;
   box-shadow: 20px 20px 10px rgba(0,0,0,0.5);
+  border: 3px solid red;
 }
 .black.text:hover{
   margin-top: 0px;
@@ -30,12 +51,40 @@
 body{
   color: white;
 }
-#chuck{
-  /*width: 100%;*/
+#chuckText{
+  position: inherit;
+  margin-top: -100px;
+  margin-left: 25px;
+  /*z-index: 4;*/
+  width: 70%;
+}
+#chuckAppearingText{
+  margin-top: 30px;
 }
 #davina{
- /* margin-top: 60px;
+/*  margin-top: 60px;
   margin-left: 7px;*/
+}
+/*#davinaBlack{
+  margin-top: -80px;
+  margin-left: -20px;
+}*/
+#davinaBox{
+  margin-top: -65px;
+  margin-left: -10px;
+  position: relative;
+}
+#davinaText{
+  position: inherit;
+  margin-top: -190px;
+  margin-left: 25px;
+  /*z-index: 9;*/
+  padding-top: 50px;
+  width: 50%;
+}
+#davinaAppearingText{
+  margin-top: 40px;
+  margin-left: 20px;
 }
 #davinaBlack{
   margin-top: 60px;
@@ -44,9 +93,24 @@ body{
 #hillary{
 
 }
-#hillaryBlack{
+#hillaryBlack, #keynoteBlack, #micBlack, #tonyBlack{
   width: 100%;
-  margin-left: 20px;
+  margin-left: 0px;
+  margin-top: -80px;
+  z-index: 1;
+}
+#hillaryText{
+  position: inherit;
+  margin-top: -190px;
+  margin-left: 35px;
+  /*z-index: 4;*/
+  padding-top: 50px;
+  width: 70%;
+}
+#hillaryAppearingText{
+  margin-top: 10px;
+  /*margin-left: 0px;*/
+  width: 80%;
 }
 img{
   max-width: 100%;
@@ -55,10 +119,12 @@ img{
   -moz-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
-  z-index: -1;
+  /*z-index: -1;*/
+
 }
 img:hover{
   position: relative;
+
   /*width: 120%;*/
 /*  -ms-transform: scale(1.3,1.3);
   -webkit-transform: scale(1.3,1.3);
@@ -70,8 +136,29 @@ img:hover{
 #keynote{
   /*width: 100%;*/
 }
+
+#keynoteText{
+  position: inherit;
+  margin-top: -100px;
+  margin-left: 25px;
+  /*z-index: 4;*/
+  width: 70%;
+}
+#keynoteAppearingText{
+  margin-top: 10px;
+}
 #mic{
   /*width: 100%;*/
+}
+#micText{
+  position: inherit;
+  margin-top: -100px;
+  margin-left: 25px;
+  /*z-index: 4;*/
+  width: 70%;
+}
+#micAppearingText{
+  margin-top: 10px;
 }
 .pic{
 
@@ -80,24 +167,24 @@ img:hover{
   width: 90%;
   margin-top: 20px;
 }
-#benText{
-  position: absolute;
-  margin-top: -190px;
-  margin-left: 25px;
-  z-index: 4;
-  /*width: 100%;
-  height: 100%;*/
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-  padding-top: 50px;
+.textOver{
+  z-index: 8;
 }
-/*.text:hover{
-  margin-top: -170px;
-}*/
+.secondRow{
+ /* margin-top: -90px;*/
+}
 #tony{
   /*width: 100%;*/
+}
+#tonyText{
+  position: inherit;
+  margin-top: -100px;
+  margin-left: 25px;
+  /*z-index: 4;*/
+  width: 70%;
+}
+#tonyAppearingText{
+  margin-top: 20px;
 }
 
 

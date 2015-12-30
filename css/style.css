@@ -67,6 +67,9 @@ body{
 #chuckAppearingText{
   margin-top: 30px;
 }
+#counter{
+  opacity: 0.1;
+}
 
 /*#davinaBlack{
   margin-top: -80px;
